@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/foo.dir/src/main.c.o"
-  "CMakeFiles/foo.dir/src/main_Hello_ESPL.c.o"
-  "/home/rtos-sim/Desktop/git-tutorial/bin/foo.pdb"
-  "/home/rtos-sim/Desktop/git-tutorial/bin/foo"
+  "bin/foo.pdb"
+  "bin/foo"
 )
 
 # Per-language clean rules from dependency scanning.

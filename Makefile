@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rtos-sim/Desktop/git-tutorial/build
+CMAKE_SOURCE_DIR = /home/rtos-sim/Desktop/git-tutorial
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rtos-sim/Desktop/git-tutorial/build
+CMAKE_BINARY_DIR = /home/rtos-sim/Desktop/git-tutorial
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rtos-sim/Desktop/git-tutorial/build/CMakeFiles /home/rtos-sim/Desktop/git-tutorial/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rtos-sim/Desktop/git-tutorial/CMakeFiles /home/rtos-sim/Desktop/git-tutorial/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rtos-sim/Desktop/git-tutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rtos-sim/Desktop/git-tutorial/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ESPL_LIB
+
+# Build rule for target.
+ESPL_LIB: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ESPL_LIB
+.PHONY : ESPL_LIB
+
+# fast build rule for target.
+ESPL_LIB/fast:
+	$(MAKE) -f CMakeFiles/ESPL_LIB.dir/build.make CMakeFiles/ESPL_LIB.dir/build
+.PHONY : ESPL_LIB/fast
+
+#=============================================================================
 # Target rules for targets named foo
 
 # Build rule for target.
@@ -122,6 +135,33 @@ foo: cmake_check_build_system
 foo/fast:
 	$(MAKE) -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
 .PHONY : foo/fast
+
+lib/espl_lib.o: lib/espl_lib.c.o
+
+.PHONY : lib/espl_lib.o
+
+# target to build an object file
+lib/espl_lib.c.o:
+	$(MAKE) -f CMakeFiles/ESPL_LIB.dir/build.make CMakeFiles/ESPL_LIB.dir/lib/espl_lib.c.o
+.PHONY : lib/espl_lib.c.o
+
+lib/espl_lib.i: lib/espl_lib.c.i
+
+.PHONY : lib/espl_lib.i
+
+# target to preprocess a source file
+lib/espl_lib.c.i:
+	$(MAKE) -f CMakeFiles/ESPL_LIB.dir/build.make CMakeFiles/ESPL_LIB.dir/lib/espl_lib.c.i
+.PHONY : lib/espl_lib.c.i
+
+lib/espl_lib.s: lib/espl_lib.c.s
+
+.PHONY : lib/espl_lib.s
+
+# target to generate assembly for a file
+lib/espl_lib.c.s:
+	$(MAKE) -f CMakeFiles/ESPL_LIB.dir/build.make CMakeFiles/ESPL_LIB.dir/lib/espl_lib.c.s
+.PHONY : lib/espl_lib.c.s
 
 src/main.o: src/main.c.o
 
@@ -150,33 +190,6 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/src/main.c.s
 .PHONY : src/main.c.s
 
-src/main_Hello_ESPL.o: src/main_Hello_ESPL.c.o
-
-.PHONY : src/main_Hello_ESPL.o
-
-# target to build an object file
-src/main_Hello_ESPL.c.o:
-	$(MAKE) -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/src/main_Hello_ESPL.c.o
-.PHONY : src/main_Hello_ESPL.c.o
-
-src/main_Hello_ESPL.i: src/main_Hello_ESPL.c.i
-
-.PHONY : src/main_Hello_ESPL.i
-
-# target to preprocess a source file
-src/main_Hello_ESPL.c.i:
-	$(MAKE) -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/src/main_Hello_ESPL.c.i
-.PHONY : src/main_Hello_ESPL.c.i
-
-src/main_Hello_ESPL.s: src/main_Hello_ESPL.c.s
-
-.PHONY : src/main_Hello_ESPL.s
-
-# target to generate assembly for a file
-src/main_Hello_ESPL.c.s:
-	$(MAKE) -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/src/main_Hello_ESPL.c.s
-.PHONY : src/main_Hello_ESPL.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -185,13 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... ESPL_LIB"
 	@echo "... foo"
+	@echo "... lib/espl_lib.o"
+	@echo "... lib/espl_lib.i"
+	@echo "... lib/espl_lib.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/main_Hello_ESPL.o"
-	@echo "... src/main_Hello_ESPL.i"
-	@echo "... src/main_Hello_ESPL.s"
 .PHONY : help
 
 
