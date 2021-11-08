@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rtos-sim/Desktop/git-tutorial/build/src/main.c
+stdio.h
+-
+espl_lib.h
+-
+
+/home/rtos-sim/Desktop/git-tutorial/build/src/main_Hello_ESPL.c
+stdio.h
+-
+

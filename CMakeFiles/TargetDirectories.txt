@@ -1,3 +1,7 @@
 /home/rtos-sim/Desktop/git-tutorial/CMakeFiles/edit_cache.dir
 /home/rtos-sim/Desktop/git-tutorial/CMakeFiles/rebuild_cache.dir
+<<<<<<< HEAD
+=======
+/home/rtos-sim/Desktop/git-tutorial/CMakeFiles/ESPL_LIB.dir
+>>>>>>> exercise
 /home/rtos-sim/Desktop/git-tutorial/CMakeFiles/foo.dir

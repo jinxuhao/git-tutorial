@@ -6,5 +6,9 @@ C_FLAGS = -g
 
 C_DEFINES = 
 
+<<<<<<< HEAD
 C_INCLUDES = -I/home/rtos-sim/Desktop/git-tutorial/include 
+=======
+C_INCLUDES = -I/home/rtos-sim/Desktop/git-tutorial/include -I/home/rtos-sim/Desktop/git-tutorial/lib 
+>>>>>>> exercise
 

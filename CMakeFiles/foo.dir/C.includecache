@@ -6,7 +6,17 @@
 
 #IncludeRegexTransform: 
 
+<<<<<<< HEAD
 /home/rtos-sim/Desktop/git-tutorial/src/main_Hello_ESPL.c
 stdio.h
 -
+=======
+/home/rtos-sim/Desktop/git-tutorial/src/main.c
+stdio.h
+-
+espl_lib.h
+-
+
+lib/espl_lib.h
+>>>>>>> exercise
 
