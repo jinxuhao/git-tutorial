@@ -1,3 +1,14 @@
+<<<<<<< HEAD
 build/
+<<<<<<< HEAD
 bin/
 CMakeFiles/
+=======
+bin/foo*
+=======
+doc/html
+doc/latex
+bin
+build
+>>>>>>> conflicts
+>>>>>>> merging

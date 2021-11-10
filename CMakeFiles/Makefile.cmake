@@ -42,8 +42,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   "CMakeFiles/ESPL_LIB.dir/DependInfo.cmake"
 >>>>>>> exercise
   "CMakeFiles/foo.dir/DependInfo.cmake"
+=======
+  "CMakeFiles/STATES_LIB.dir/DependInfo.cmake"
+  "CMakeFiles/state_machine.dir/DependInfo.cmake"
+>>>>>>> merging
   )
